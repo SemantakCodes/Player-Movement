@@ -1,10 +1,10 @@
-using UnityEngine;
+using Unity;
 
-public class PlayerSprintState : PlayerBaseState
+public class PlayerIdleState : PlayerBaseState
 {
     public override void EnterState(PlayerStateManager player)
     {
-
+        
     }
     public override void UpdateState(PlayerStateManager player)
     {
