@@ -8,7 +8,11 @@ public class PlayerWalkState : PlayerBaseState
     }
     public override void UpdateState(PlayerStateManager player)
     {
-        
+        Debug.Log("Walk");
+        if(player.move == Vector3.zero)
+        {
+            player.SwitchState(player.idleState);
+        }
     }
     
 }
