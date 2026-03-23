@@ -16,7 +16,10 @@ public class PlayerIdleState : PlayerBaseState
         {
             player.SwitchState(player.walkState);
         }
-        
+        if((player.move != Vector3.zero && player.jumpAction.IsPressed()) || (player.move == Vector3.zero && player.jumpAction.IsPressed()))
+        {
+            player.SwitchState(player.jumpState);
+        }
         
     }
 }

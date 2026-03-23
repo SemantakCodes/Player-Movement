@@ -15,8 +15,9 @@ public class PlayerStateManager : MonoBehaviour
     // Uni Variables Zone
     [SerializeField] private CharacterController charController;
     //Loading the actions
-    [SerializeField] private InputAction moveAction;
-    [SerializeField] private InputAction jumpAction;
+    public InputAction moveAction;
+    public InputAction jumpAction;
+    
     
     public Vector3 newMoveValue;
     public Vector3 move;

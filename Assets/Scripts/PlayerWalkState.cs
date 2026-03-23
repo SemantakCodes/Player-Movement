@@ -13,6 +13,10 @@ public class PlayerWalkState : PlayerBaseState
         {
             player.SwitchState(player.idleState);
         }
+        if (player.jumpAction.IsPressed())
+        {
+            player.SwitchState(player.jumpState);
+        }
     }
     
 }
